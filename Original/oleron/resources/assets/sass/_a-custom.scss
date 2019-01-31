@@ -1,0 +1,50 @@
+// Pagination Style
+.page-navigation a {
+  margin: 0 2px;
+  display: inline-block;
+  padding: 3px 5px;
+  color: #ffffff;
+  background-color: #70b7ec;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.page-navigation a[data-selected] {
+  background-color: #3d9be0;
+}
+
+// Auto Generate Serial key To HTML Table
+// body {
+//     /* Set "my-sec-counter" to 0 */
+//     counter-reset: my-sec-counter;
+// }
+
+// tr::before {
+//     /* Increment "my-sec-counter" by 1 */
+//     counter-increment: my-sec-counter;
+//     content: "Section " counter(my-sec-counter) ". ";
+// }  
+#dash{
+	background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+	
+}
+#admin{
+	background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+#backButton{
+  margin-right: 20px;
+  display: inline-block;
+    padding: 8px 16px;
+    background-color: black;
+    color: yellow;
+    font-size: 20px;
+}
+
+.btn-success{
+  background-image: linear-gradient(to right, #434343 0%, black 100%) !important;
+}
+
+.btn-primary{
+  background-image: linear-gradient(to right, #434343 0%, black 100%) !important;
+}

@@ -1,0 +1,762 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Glegoo);
+
+html {
+  -webkit-font-smoothing: antialiased !important;
+}
+html, body {
+     margin: 0 !important;
+     padding: 0 !important;
+     height: 100%;
+     width: 100% !important;
+     //font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  //background: #ffffff;
+  background: whitesmoke;
+  font-family: "Roboto", sans-serif;
+  line-height: 28px !important;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+  line-height: 28px !important;
+  font-size: 16px !important;
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8 !important;
+  font-weight: 400;
+  font-size: 16px !important;
+}
+
+ul li {
+  list-style: none;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8 !important;
+  font-weight: 400;
+  font-size: 16px !important;
+}
+ol li {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8 !important;
+  font-weight: 400;
+  font-size: 16px !important;
+}
+
+a{
+  text-decoration: none !important;
+}
+a:hover {
+  color: #c0a16b !important;
+  //font-weight: 700 !important;
+  //font-style: italic !important;
+  font-family: Tahoma, Geneva, sans-serif !important;
+}
+a:hover, a:active, a:focus {
+  outline: 0 !important;
+}
+// ============================================= Hero Area =========================================================
+#hero-area {
+  background-size: cover;
+  padding-top: 70px !important;
+  padding-bottom: 0px !important;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+// =========================================== scroll to top button =================================================
+#backtop {
+    position: fixed;
+    left:auto;right: 20px;top:auto;bottom: 20px;
+    outline: none;
+    overflow:hidden;
+    color:#001333;
+    text-align:center;
+    background-image: linear-gradient(to top, #6a85b6 0%, #bac8e0 100%);
+    height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index:999999;
+
+    opacity:1;
+    display:none;
+}
+#backtop:hover {
+  background: #C9CCD3;
+  background-image: linear-gradient(-180deg, rgba(255,255,255,0.50) 0%, rgba(0,0,0,0.50) 100%);
+  background-blend-mode: lighten;
+}
+#backtop.mcOut {
+    opacity:0;
+}
+
+// ================================================== Blog Design ======================================================
+#blog-full-width {
+  /*padding: 40px 0 80px;*/
+  //padding: 90px 0 90px;
+  padding: 90px 0 10px;
+
+  background: #fff;
+  //background-image: linear-gradient(-225deg, #FFFEFF 0%, #D7FFFE 100%);
+}
+
+// justify-content: space-between;
+
+// ============================================== Breadcrumb Style =====================================================
+
+#pg_title{
+    //height: 20% !important;
+    //background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+    border-bottom-right-radius: 28px;
+    border-bottom-left-radius: 28px;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+#pg_title li a {
+    //height: 20% !important;
+    color: #778899;
+    font-size: 13px;
+}
+#pg_title li {
+    font-size: 14px;
+    font-family: monospace;
+}
+#active_title{
+    color: #008080;
+}
+
+// =================================================== Header css ======================================================
+#top-bar {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  color: #fff;
+  transition: all 0.2s ease-out 0s;
+  padding: 7px 0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  /*border-bottom: 1px solid #dedede;*/
+}
+
+#top-bar .navbar-nav li a:hover {
+  background: transparent;
+}
+
+#top-bar.animated-header {
+  padding: 20px 0;
+  //background-color: #fff;
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  box-shadow: none;
+}
+
+#top-bar .main-menu li a {
+  //color: linear-gradient(to right, #434343 0%, black 100%);
+  color: #447987;
+  font-family: Times, Times New Roman, serif;
+  font-size: 16px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: .3s all;
+  text-transform: uppercase;
+}
+
+#top-bar .main-menu li a:active {
+  background-image: linear-gradient(to top, #0c3483 0%, #a2b6df 100%, #6b8cce 100%, #a2b6df 100%);
+  //font-weight: 700;
+}
+
+li.active {
+  //background-color: #031430;
+  //background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+  border-bottom: 1px dotted blue;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  font-weight: 700;
+  font-style: italic;
+}
+#top-bar .main-menu li a:hover {
+  color: #02bdd5;
+}
+
+#contactt{
+  font-weight: 700 !important;
+  font-family: Times, Times New Roman, serif !important;
+  color: green !important;
+}
+
+// ================================================= Sidebar css =======================================================
+.sidebar {
+  //padding-top: 60px;
+  padding-top: 7px;
+}
+
+.sidebar .widget {
+  margin-bottom: 40px;
+  padding: 15px;
+  //border: 1px solid #dedede;
+  border: 1px solid #eff5ff;
+  border-bottom-right-radius: 28px;
+  border-top-right-radius: 28px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  //background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+}
+
+.sidebar .recent-post ul li a {
+  color: #555;
+  font-size: 16px;
+  font-family: URW Chancery L, cursive;
+}
+
+// =================================================== Footer CSS ======================================================
+
+#footer {
+  //background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 25px 0;
+  color: #555;
+}
+
+#footer .copyright {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+#footer .copyright a {
+  color: #0e3677;
+  font-family: cursive;
+}
+
+#footer .social {
+  text-align: right;
+  margin-bottom: 0;
+}
+
+#footer .social li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+#footer .social li a {
+  font-size: 22px;
+  color: #041f4c;
+}
+
+// ========================================= Slider Animation =======================================
+#sg-carousel {
+    position: relative;
+    height: 89vh;
+}
+#sg-carousel .carousel-inner .item {
+    height: 89vh;
+}
+.carousel-caption{
+    top:50%;
+    bottom: 15% !important;
+    border: 1px solid #d3d3ff;
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+    opacity: 0.7;
+    filter: alpha(opacity=50);
+  }
+.carousel-caption h1 {
+    font-size: 6em;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    color: #75a5a8;
+    -webkit-text-stroke-width: 2px;
+   -webkit-text-stroke-color: #01598c;
+}
+#sg-carousel .carousel-control.left {
+    top: 48%;
+}
+#sg-carousel .carousel-control.right {
+    top: 48%;
+}
+.uppr-txt {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 35px;
+}
+#sg-carousel .carousel-control.left,
+#sg-carousel .carousel-control.right {
+    background-image: none;
+    background-repeat: no-repeat;
+    opacity: 0;
+    text-shadow: none;
+    transition: all 0.8s ease 0s;
+}
+.carousel-control {
+    bottom: 0;
+    color: #fff;
+    font-size: 20px;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    top: 0;
+    width: auto;
+    transition: all 0.8s ease 0s;
+}
+.carousel-inner {
+    box-shadow: 2px 6px 21px;
+}
+.fa-angle-right,
+.fa-angle-left {
+    font-size: 80px;
+}
+#sg-carousel:hover .carousel-control.left {
+    left: 38px;
+    transition: all .2s ease 0;
+}
+#sg-carousel:hover .carousel-control.right {
+    right: 38px;
+    transition: all .2s ease 0;
+}
+#sg-carousel:hover .carousel-control.left,
+#sg-carousel:hover .carousel-control.right {
+    opacity: 1;
+}
+.carousel-inner > .item > a > img,
+.carousel-inner > .item > img,
+.img-responsive,
+.thumbnail a > img,
+.thumbnail > img {
+    display: block;
+    height: 100% !important;
+    max-width: 100%;
+    width: 100%;
+}
+.item.active img {
+    transition: transform 5000ms linear 0s;
+    transform: scale(1.05, 1.05);
+}
+.carousel-fade .carousel-inner .active {
+    opacity: 1;
+}
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+    opacity: 1;
+}
+.carousel-fade .carousel-control {
+    z-index: 2;
+    font-size: 80px;
+}
+.carousel-caption {
+    left: 60%;
+    padding-bottom: 5%;
+    right: 0;
+    text-align: left;
+}
+
+.carousel-caption h1 {
+    font-family: raavi;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 37px;
+}
+.carousel-caption > p {
+    font-size: 30px;
+    color: #fff;
+}
+.carousel-caption > a {
+    text-transform: uppercase;
+    color: #fff;
+    background: #041132;
+    padding: 6px 12px;
+}
+
+.carousel-indicators li {
+    background-color: #b3b5b9;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    height: 12px;
+    margin: 1px;
+    text-indent: -999px;
+    width: 12px;
+    border: 0;
+}
+.carousel-indicators .active {
+    background-color: #041132;
+    height: 12px;
+    margin: 0;
+    width: 12px;
+    border: 0;
+}
+#sg-carousel h1 {
+    animation-delay: 1s;
+  margin-bottom:25px;
+}
+#sg-carousel p {
+  animation-delay: 2s;
+  color: #025c66;
+  font-size: 23px;
+}
+#sg-carousel button {
+    animation-delay: 3s;
+  margin-top:25px;
+}
+@media all and (transform-3d),
+(-webkit-transform-3d) {
+    .carousel-fade .carousel-inner > .item.next,
+    .carousel-fade .carousel-inner > .item.active.right {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.prev,
+    .carousel-fade .carousel-inner > .item.active.left {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+    .carousel-fade .carousel-inner > .item.next.left,
+    .carousel-fade .carousel-inner > .item.prev.right,
+    .carousel-fade .carousel-inner > .item.active {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+#services{
+  color: #1a2828;
+  font-family: cursive;
+  font-size: 25px;
+  -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: #515151;
+}
+
+// ========================================= Contact Page =======================================
+
+#street{
+  padding: 0px 100px;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border: 2px solid #afbccc;
+  border-radius: 20px 0px;
+}
+
+#form{
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+  border: 2px solid #afbccc;
+  border-radius: 0px 20px;
+  overflow: auto !important;
+}
+
+#holder{
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#alter{
+  color: red; 
+  background: #ffe100;  
+  display: none;
+  font-family: Optima, sans-serif;
+  font-style: oblique;
+}
+
+// ========================================= Logo =======================================
+.navbar-header .navbar-brand {
+  padding: 5px 0;
+}
+
+.navbar-header .navbar-brand a {
+  height: auto;
+  display: inline-block;
+  margin-top: 8px;
+}
+
+// .navbar-header .navbar-brand a p {
+//   color: #35b8d6;
+//   font-size: 35px;
+//   font-family: cursive;
+//   -webkit-text-stroke-width: 1px;
+//    -webkit-text-stroke-color: #515151;
+// }
+
+.flux {
+  font-family: cursive;
+  color: #347BB7;
+  font-size: 45px;
+}
+
+.flux {
+  animation: flux 2s linear infinite;
+}
+
+@keyframes flux {
+  0%,
+  100% {
+    text-shadow: 0 0 1px #e0ffe8, 0 0 3px #347BB7, 0 0 10px #347BB7, 0 0 10px #347BB7, 0 0 .4px #8BFDFE, .5px .5px .1px #147280;
+    color: #ffffff;
+  }
+  50% {
+    text-shadow: 0 0 .5px #347BB7, 0 0 1.5px #347BB7, 0 0 5px #1b5766, 0 0 5px #bad4ff, 0 0 .2px #082180, .5vw .5vw .1vw #347BB7;
+    color: #bbc7ce;
+  }
+}
+
+// ============================================== Services =================================================
+/* Featured Product */
+
+#featured-card-section .pricing-column {
+  padding: 30px 40px;
+  box-shadow: 0 6px 24px -3px rgba(0,0,0,0.2);
+  border-radius:4px;
+}
+
+#featured-card-section .pricing-column h2 {
+  font-weight: 400;
+  margin-top:0;
+  padding-bottom: 20px;
+  border-bottom:solid 1px #eee;
+  font-size:25px;
+}
+
+#featured-card-section .pricing-column p {
+  margin-bottom: 15px; 
+  font-size:14px;
+}
+
+#featured-card-section .pricing-column ul {
+  padding-left:22px;
+}
+
+#featured-card-section .pricing-column li {
+  font-size:14px;
+}
+
+#featured-card-section .pricing-column .button {
+  width:100%;
+  margin-bottom:0;
+}
+
+// another second one
+.sidebarservices {
+  position: relative;
+  width: 100%;
+  float: left;
+  //border:1px solid blue;
+}
+.sidebarservices .head {
+  text-align:center;
+  font-size:15pt;
+  background:gray;
+  color:white;
+}
+.head:hover {
+  background:gray !important;
+  cursor: initial;
+}
+.sidebarservices li {
+  list-style:none; 
+  background-color:#0e6eb7; 
+  margin:5px 10px;
+  text-align:left; 
+  padding: 10px 0 10px 20px;
+  border-radius:5px 5px;
+  cursor:pointer;
+  }
+.sidebarservices li a {
+  text-decoration:none; 
+  color:white !important;
+  font-family: Century Gothic, sans-serif;
+  }
+  .sidebarservices li:hover {
+    background:black;
+    color:black;
+  }
+
+#service{
+  margin-bottom: 20px;
+}
+#sort{
+  float: right;
+}
+
+// ============================================== Another custom =================================================
+#myTitle{
+  text-align: center;
+  color:#075650;
+  font-size:20px;
+  font-weight:700;
+  font-family:Tahoma, Geneva, sans-serif;
+  margin-bottom:14px;
+  text-transform:uppercase;
+}
+#subTitle{
+  text-align: center;
+}
+#textLimit{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow:ellipsis;
+  display: block;
+  width: 100px;
+}
+
+// ============================================== Home CSS =================================================
+.containerrr{
+  margin:80px auto;
+  width: 60px;
+  height: 60px;
+  position:relative;
+  transform-origin:center bottom;
+  animation-name: flicker;
+  animation-duration:3ms;
+  animation-delay:200ms;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.flame{
+  bottom:0;
+  position:absolute;
+  border-bottom-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  transform:rotate(-45deg) scale(1.5,1.5);
+}
+
+.yellow{
+  left:15px; 
+  width: 30px;
+  height: 30px;
+  background:gold;
+  box-shadow: 0px 0px 9px 4px gold;
+}
+
+.orange{
+  left:10px; 
+  width: 40px;
+  height: 40px;
+  background:orange;
+  box-shadow: 0px 0px 9px 4px orange;
+}
+
+.red{
+  left:5px;
+  width: 50px;
+  height: 50px;
+  background:OrangeRed;
+  box-shadow: 0px 0px 5px 4px OrangeRed;
+}
+
+.white{
+  left:15px; 
+  bottom:-4px;
+  width: 30px;
+  height: 30px;
+  background:white;
+  box-shadow: 0px 0px 9px 4px white;
+}
+
+.circle{
+  border-radius: 50%;
+  position:absolute;  
+}
+
+.blue{
+  width: 10px;
+  height: 10px;
+  left:25px;
+  bottom:-25px; 
+  background: SlateBlue;
+  box-shadow: 0px 0px 15px 10px SlateBlue;
+}
+
+.black{
+  width: 40px;
+  height: 40px;
+  left:10px;
+  bottom:-60px;  
+  background: black;
+  box-shadow: 0px 0px 15px 10px black;
+}
+
+@keyframes flicker{
+  0%   {transform: rotate(-1deg);}
+  20%  {transform: rotate(1deg);}
+  40%  {transform: rotate(-1deg);}
+  60%  {transform: rotate(1deg) scaleY(1.04);}
+  80%  {transform: rotate(-2deg) scaleY(0.92);}
+  100% {transform: rotate(1deg);}
+}
+
+// text animation
+.text {
+  fill: none;
+  stroke-width: 1;
+  stroke-linejoin: round;
+  stroke-dasharray: 60 330;
+  stroke-dashoffset: 0;
+  -webkit-animation: stroke 3s infinite linear;
+  animation: stroke 3s infinite linear;
+}
+
+.text:nth-child(5n + 1) {
+  stroke: #F2385A;
+  -webkit-animation-delay: -1.2s;
+  animation-delay: -1.2s;
+}
+.text:nth-child(5n + 2) {
+  stroke: #F5A503;
+  -webkit-animation-delay: -2.4s;
+  animation-delay: -2.4s;
+}
+
+.text:nth-child(5n + 3) {
+  stroke: #E9F1DF;
+  -webkit-animation-delay: -3.6s;
+  animation-delay: -3.6s;
+}
+
+.text:nth-child(5n + 4) {
+  stroke: #56D9CD;
+  -webkit-animation-delay: -4.8s;
+  animation-delay: -4.8s;
+}
+
+.text:nth-child(5n + 5) {
+  stroke: #3AA1BF;
+  -webkit-animation-delay: -6s;
+  animation-delay: -6s;
+}
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: -400;
+  }
+}
+
+
+// ============================================== Another CSS =================================================
+#team-our{
+  padding-top: 50px;
+}

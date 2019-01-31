@@ -1,0 +1,1 @@
+<script src="/ovc/counter.js"></script>
